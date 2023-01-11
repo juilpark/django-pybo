@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-wwhvg%*4ms!swm8d^bm0rdsbr^!+tj0x&c8zm(lxb@s8j@69wc
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+INTERNAL_IPS = [
+        "127.0.0.1",
+        ]
 
 # Application definition
 
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'common.apps.CommonConfig',
+    'tailwind',
+    'template',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +72,8 @@ TEMPLATES = [
         },
     },
 ]
+
+TAILWIND_APP_NAME = 'template'
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
