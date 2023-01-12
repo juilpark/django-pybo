@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import Question, Answer
+from ..models import Question, Answer
 from django.http import HttpResponseNotAllowed
-from .forms import QuestionForm, AnswerForm
+from ..forms import QuestionForm, AnswerForm
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
