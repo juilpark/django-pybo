@@ -1,0 +1,23 @@
+# Deployment Environments
+# Select : local OR dev OR prod
+ENV='local'
+
+# SECRET_KEY in django
+# It uses for Signing seucrity thingy, 
+# so every container or instance must use same secret
+# CURRENT & OLD uses for rotating SECRET KEY
+CURRENT_SECRET_KEY='1$e%--9^!a742%e44d)zj-ggo)t^cq0^k=(d#3b!!$e9ak&2y)'
+OLD_SECRET_KEY=''
+
+# ALLOWED_HOSTS in django
+# if ENV is not prod, It will be ignored
+# Check https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-ALLOWED_HOSTS
+ALLOWED_HOSTS=''
+
+# DATABASE Related
+# if ENV is local, below db config is ignored and use db.sqlite3 in Project Root Directory
+DB_HOST='database'
+DB_PORT='3306'
+DB_SCHEMA_NAME='pybo'
+DB_USER='pybo'
+DB_PASS='pybo123'
