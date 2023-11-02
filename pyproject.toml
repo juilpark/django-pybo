@@ -35,7 +35,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-Django = "^4.2.5"
+Django = "^4.2.7"
 tzdata = "^2023.3"
 markdown = "^3.4.4"
 
